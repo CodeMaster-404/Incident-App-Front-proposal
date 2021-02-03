@@ -2,7 +2,9 @@
   <div class="spacer1"></div>
     <div class="container" >
       <div class="spacer1"></div>
+      <h2 class="card-title">Login</h2>
       <div class="spacer"></div>
+
       <form [formGroup]="loginForm" autocomplete="off" novalidate (ngSubmit)="onSubmit()">
         <div class="form-group row" style="align-items: center;">
             <label for="email" class="col-form-label col-sm-2">Email:</label>
@@ -26,9 +28,11 @@
         <br>
         <div class="form-group row">
             <div class="col-md-1">
-                <button type="submit" class="button" [disabled]="!loginForm.valid">Login</button>
+                <button type="submit" class="button" [disabled]="!loginForm.valid">LOGIN</button>
             </div>
         </div>
+        <div class="spacer"></div>
+        <div class="spacer1"></div>
       </form>
       <div class="spacer1"></div>
       <div class="spacer"></div>
@@ -36,6 +40,8 @@
     </div>
     <br/>
     <a routerLink="/auth/register" routerLinkActive="active">register</a>
+    <br/>
+    <a routerLink="/forgot password" routerLinkActive="active">forgot password</a>
 </div>
 
 
